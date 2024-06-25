@@ -1,13 +1,13 @@
 <?php
 
-namespace Ysfkaya\FilamentPhoneInput\Infolists;
+namespace IsitLab\FilamentPhoneInput\Infolists;
 
 use Closure;
 use Filament\Infolists\Components\TextEntry;
 use Illuminate\Support\HtmlString;
 use libphonenumber\PhoneNumberFormat;
 use Propaganistas\LaravelPhone\Exceptions\NumberParseException;
-use Ysfkaya\FilamentPhoneInput\PhoneInputNumberType;
+use IsitLab\FilamentPhoneInput\PhoneInputNumberType;
 
 class PhoneEntry extends TextEntry
 {

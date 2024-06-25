@@ -1,6 +1,6 @@
 <?php
 
-namespace Ysfkaya\FilamentPhoneInput;
+namespace IsitLab\FilamentPhoneInput;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Css;
@@ -23,7 +23,7 @@ class FilamentPhoneInputServiceProvider extends PackageServiceProvider
         FilamentAsset::register([
             Css::make('filament-phone-input', __DIR__ . '/../dist/css/filament-phone-input.css')->loadedOnRequest(),
             AlpineComponent::make('filament-phone-input', __DIR__ . '/../dist/js/filament-phone-input.js'),
-        ], package: 'ysfkaya/filament-phone-input');
+        ], package: 'isitlab/filament-phone-input');
 
         $this->publishes([
             $this->package->basePath('/../images/vendor/intl-tel-input/build') => public_path("vendor/{$this->package->shortName()}"),

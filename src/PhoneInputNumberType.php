@@ -1,6 +1,6 @@
 <?php
 
-namespace Ysfkaya\FilamentPhoneInput;
+namespace IsitLab\FilamentPhoneInput;
 
 use libphonenumber\PhoneNumberFormat;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Ysfkaya\FilamentPhoneInput\Tables;
+namespace IsitLab\FilamentPhoneInput\Tables;
 
 /**
- * @deprecated Use Ysfkaya\FilamentPhoneInput\Tables\PhoneColumn instead.
+ * @deprecated Use IsitLab\FilamentPhoneInput\Tables\PhoneColumn instead.
  */
 class PhoneInputColumn extends PhoneColumn
 {

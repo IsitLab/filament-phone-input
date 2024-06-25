@@ -20,7 +20,7 @@
     $isLiveDebounced = $isLiveDebounced();
     $liveDebounce = $getLiveDebounce();
 
-    $cssUrl = \Filament\Support\Facades\FilamentAsset::getStyleHref('filament-phone-input', package: 'ysfkaya/filament-phone-input');
+    $cssUrl = \Filament\Support\Facades\FilamentAsset::getStyleHref('filament-phone-input', package: 'isitlab/filament-phone-input');
 
     $compiledCssUrl = Js::from($cssUrl);
 @endphp
@@ -46,11 +46,11 @@
         :prefix="$prefixLabel"
         :prefix-actions="$prefixActions"
         :prefix-icon="$prefixIcon"
-        :prefix-icon-color="$getPrefixIconColor()"
+
         :suffix="$suffixLabel"
         :suffix-actions="$suffixActions"
         :suffix-icon="$suffixIcon"
-        :suffix-icon-color="$getSuffixIconColor()"
+
         :valid="! $errors->has($statePath)"
         :attributes="
             \Filament\Support\prepare_inherited_attributes($getExtraAttributeBag())
@@ -75,7 +75,7 @@
                 @else
                     ax-load
                 @endif
-                ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('filament-phone-input', package: 'ysfkaya/filament-phone-input') }}"
+                ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('filament-phone-input', package: 'isitlab/filament-phone-input') }}"
                 x-data="phoneInputFormComponent({
                     getInputTelOptionsUsing: (intlTelInput) => ({{ $getJsonPhoneInputConfiguration() }}),
                     state: $wire.$entangle('{{ $statePath }}'),

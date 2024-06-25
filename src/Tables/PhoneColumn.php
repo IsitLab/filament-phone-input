@@ -1,13 +1,13 @@
 <?php
 
-namespace Ysfkaya\FilamentPhoneInput\Tables;
+namespace IsitLab\FilamentPhoneInput\Tables;
 
 use Closure;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\HtmlString;
 use libphonenumber\PhoneNumberFormat;
 use Propaganistas\LaravelPhone\Exceptions\NumberParseException;
-use Ysfkaya\FilamentPhoneInput\PhoneInputNumberType;
+use IsitLab\FilamentPhoneInput\PhoneInputNumberType;
 
 class PhoneColumn extends TextColumn
 {
